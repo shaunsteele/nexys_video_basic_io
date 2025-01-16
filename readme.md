@@ -29,7 +29,8 @@ Reads uint8_t from Switches register. 8 Switches register matches the Nexys Vide
 ### Read Buttons Register
 Reads uint8_t from Buttons register. The register organizes the 5 buttons like below.
 
-| Bit    | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
+| Bit    | 7 | 6 | 5 | 4   | 3    | 2      | 1     | 0      |
+| ------ | - | - | - | --- | ---- | ------ | ----- | ------ |
 | Button | x | x | x | top | left | center | right | bottom |
 
 ## Test Bench
