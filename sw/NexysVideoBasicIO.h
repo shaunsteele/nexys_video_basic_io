@@ -12,6 +12,7 @@ public:
     ~NexysVideoBasicIO();                    // destructor
     /* methods */
     void SetLed(uint8_t data);
+    uint8_t ReadLed();
     uint8_t ReadSwitches();
     uint8_t ReadButtons();
 private:

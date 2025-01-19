@@ -16,6 +16,10 @@ void NexysVideoBasicIO::SetLed(uint8_t data) {
     io_write(baseAddr, LED, leds);
 }
 
+uint8_t NexysVideoBasicIO::ReadLed() {
+    return leds;
+}
+
 uint8_t NexysVideoBasicIO::ReadSwitches() {
     switches = io_read(baseAddr, SWITCH);
     return switches;
