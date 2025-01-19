@@ -15,7 +15,7 @@ Package that will control the Digilent Nexys Video basic IO components:
 ## Register Map
 | Offset | Register | RW? |
 | ------ | -------- | --- |
-| 0      | LEDs     | WO  |
+| 0      | LEDs     | RW  |
 | 1      | Switches | RO  |
 | 2      | Buttons  | RO  |
 
@@ -34,8 +34,10 @@ Reads uint8_t from Buttons register. The register organizes the 5 buttons like b
 | Button | x | x | x | top | left | center | right | bottom |
 
 ## Test Bench
+UVM
 
 ## Design
+AXI5 Lite
 
 ## Coverage Results
 
