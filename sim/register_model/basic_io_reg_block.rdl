@@ -1,0 +1,56 @@
+addrmap basic_io_reg_block {
+    name = "Nexys Video Basic IO Controller";
+    desc = "Register description of the Digilent Nexys Video development board's buttons, switches, and LED controller";
+
+    default regwidth = 8;
+
+    reg {
+        name = "LEDs";
+        field {hw = r; sw = rw;} LD[7:0] = 0;
+    } LD @ 0x00;
+
+    reg {
+        name = "Switches";
+        field {hw = w; sw = r;} SW[7:0] = 0;
+    } SW @ 0x01;
+
+    reg {
+        name = "Buttons";
+
+        field {
+            desc = "Reserved";
+            hw = na;
+            sw = r;
+        } RSVD[7:5] = 0;
+
+        field {
+            desc = "Button Up";
+            hw = w;
+            sw = r;
+        } BTNU[4:4] = 0;
+
+        field {
+            desc = "Button Left";
+            hw = w;
+            sw = r;
+        } BTNL[3:3] = 0;
+
+        field {
+            desc = "Button Center";
+            hw = w;
+            sw = r;
+        } BTNC[2:2] = 0;
+
+        field {
+            desc = "Button Right";
+            hw = w;
+            sw = r;
+        } BTNR[1:1] = 0;
+
+        field {
+            desc = "Button Down";
+            hw = w;
+            sw = r;
+        } BTND[0:0] = 0;
+    } BTN @ 0x02;
+};

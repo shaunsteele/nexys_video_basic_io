@@ -1,0 +1,26 @@
+!axi_lite_if
+aclk        aclk
+areset      aresetn
+i_awvalid   awvalid
+o_awready   awready
+i_awid      awid
+i_awaddr    awaddr
+i_awprot    awprot
+i_wvalid    wvalid
+o_wready    wready
+i_wdata     wdata
+i_wstrb     wstrb
+o_bvalid    bvalid
+i_bready    bready
+o_bid       bid
+o_bresp     bresp
+i_arvalid   arvalid
+o_arready   arready
+i_arid      arid
+i_araddr    araddr
+i_arprot    arprot
+o_rvalid    rvalid
+i_rready    rready
+o_rid       rid
+o_rdata     rdata
+o_rresp     rresp
