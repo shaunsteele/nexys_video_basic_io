@@ -37,7 +37,7 @@ dual_top          = no                # Has two top-level modules rather than in
 #common_env_pkg = common_env_pkg.sv    # Include package file from include directory
 
 # Register model (alternative to using the deprecated reg.tpl)
-regmodel_file       = ../regmodel/basic_io_reg_pkg.sv
+regmodel_file       = ../regmodel/regmodel_pkg.sv
 top_reg_block_type  = basic_io_reg_block
 
 

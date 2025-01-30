@@ -14,6 +14,7 @@ package regmodel_pkg;
         rand uvm_reg_field BTNL;
         rand uvm_reg_field BTNU;
 
+        `uvm_object_utils(basic_io_reg_block__BASIC_IO_REG)
         function new(string name = "basic_io_reg_block__BASIC_IO_REG");
             super.new(name, 64, UVM_NO_COVERAGE);
         endfunction : new
@@ -39,6 +40,8 @@ package regmodel_pkg;
     // Addrmap - basic_io_reg_block
     class basic_io_reg_block extends uvm_reg_block;
         rand basic_io_reg_block__BASIC_IO_REG BASIC_IO_REG;
+
+        `uvm_object_utils(basic_io_reg_block)
 
         function new(string name = "basic_io_reg_block");
             super.new(name);
