@@ -13,3 +13,4 @@
 **/archive_*
 *.gtkw
 **/vivado
+**/generated_tb
