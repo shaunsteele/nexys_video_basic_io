@@ -24,3 +24,8 @@ i_rready    rready
 o_rid       rid
 o_rdata     rdata
 o_rresp     rresp
+
+!basic_io
+i_buttons   buttons
+i_switches  switches
+o_leds      leds

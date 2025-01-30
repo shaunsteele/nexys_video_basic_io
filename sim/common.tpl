@@ -6,7 +6,7 @@ dut_source_path = ../rtl
 inc_path  = inc
 dut_pfile = pinlist
 prefix    = top
-project   = tb
+#project   = tb
 dut_iname = u_DUT
 
 # Text fields included in every generated file header
@@ -30,15 +30,15 @@ backup         = no                   # Whether to keep a backup copy of the gen
 #comments_at_include_locations = no   # Whether to generate comments showing where you can insert code and suppress generation of certain methods
 
 dual_top          = no                # Has two top-level modules rather than instantiating test harness module from test bench module
-split_transactors = yes               # Expects driver & monitor to be partitioned into untimed and synthesizable parts
+#split_transactors = yes               # Expects driver & monitor to be partitioned into untimed and synthesizable parts
 
 # Common packages, always the first two user-defined packages imported in the generated code
 #common_pkg     = common_pkg.sv        # Include package file from dut directory
 #common_env_pkg = common_env_pkg.sv    # Include package file from include directory
 
 # Register model (alternative to using the deprecated reg.tpl)
-regmodel_file      = register_model/basic_io_reg_pkg.sv
-top_reg_block_type = basic_io_reg_block
+regmodel_file       = ../regmodel/basic_io_reg_pkg.sv
+top_reg_block_type  = basic_io_reg_block
 
 
 # Enable or suppress automatic generation of code or methods. Default is yes in every case
